@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Overhill Junior School</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="admin-brand">
+        <img src="images/logo.png" alt="Logo">
+        <span>Overhill<br>Admin</span>
+      </div>
+      <nav class="admin-nav">
+        <span class="nav-label">Main</span>
+        <a href="#" class="active" data-section="overview"><span class="ic">&#9783;</span> Dashboard</a>
+        <span class="nav-label">Content</span>
+        <a href="#" data-section="news"><span class="ic">&#128240;</span> Manage News</a>
+        <a href="#" data-section="events"><span class="ic">&#128197;</span> Manage Events</a>
+        <a href="#" data-section="gallery"><span class="ic">&#128247;</span> Manage Gallery</a>
+        <a href="#" data-section="downloads"><span class="ic">&#128190;</span> Manage Downloads</a>
+        <a href="#" data-section="hero"><span class="ic">&#127912;</span> Manage Hero Slides</a>
+        <a href="#" data-section="notices"><span class="ic">&#128226;</span> Manage Notices</a>
+        <a href="#" data-section="faqs"><span class="ic">&#10067;</span> Manage FAQs</a>
+        <span class="nav-label">People</span>
+        <a href="#" data-section="staff"><span class="ic">&#128100;</span> Manage Staff</a>
+        <a href="#" data-section="admissions"><span class="ic">&#127891;</span> Manage Admissions</a>
+        <span class="nav-label">Account</span>
+        <a href="admin-login.html"><span class="ic">&#9211;</span> Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="admin-main">
+      <div class="admin-topbar">
+        <div style="display:flex;align-items:center;gap:12px">
+          <button class="menu-btn" id="menuBtn">&#9776;</button>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="topbar-right">
+          <a href="index.html" class="btn btn-outline btn-sm" target="_blank">View Site</a>
+          <div class="admin-user">
+            <div class="admin-avatar">A</div>
+            <span>{{admin_name}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-content">
+        <div class="placeholder-note">
+          This dashboard is a front-end shell. All data shown uses
+          <code>{{placeholders}}</code> and will be served from the backend
+          database once connected. Forms below are wired to authentication and
+          API placeholders.
+        </div>
+
+        <!-- OVERVIEW -->
+        <section class="admin-pane" data-pane="overview">
+          <div class="stat-grid">
+            <div class="stat-widget"><div class="sw-icon">&#128240;</div><div><div class="sw-num">{{news_count}}</div><div class="sw-label">News Articles</div></div></div>
+            <div class="stat-widget green"><div class="sw-icon">&#128197;</div><div><div class="sw-num">{{events_count}}</div><div class="sw-label">Upcoming Events</div></div></div>
+            <div class="stat-widget sky"><div class="sw-icon">&#127891;</div><div><div class="sw-num">{{admissions_count}}</div><div class="sw-label">New Admissions</div></div></div>
+            <div class="stat-widget red"><div class="sw-icon">&#128226;</div><div><div class="sw-num">{{notices_count}}</div><div class="sw-label">Active Notices</div></div></div>
+          </div>
+
+          <div class="cards-2">
+            <div class="panel">
+              <div class="panel-head"><h2>Recent Admission Enquiries</h2><a href="#" class="btn btn-sm btn-outline">View All</a></div>
+              <div class="panel-body">
+                <table class="admin-table">
+                  <thead><tr><th>Applicant</th><th>Class</th><th>Date</th><th>Status</th></tr></thead>
+                  <tbody>
+                    <tr><td>{{applicant_name_1}}</td><td>{{applicant_class_1}}</td><td>{{applicant_date_1}}</td><td><span class="badge new">New</span></td></tr>
+                    <tr><td>{{applicant_name_2}}</td><td>{{applicant_class_2}}</td><td>{{applicant_date_2}}</td><td><span class="badge published">Reviewed</span></td></tr>
+                    <tr><td>{{applicant_name_3}}</td><td>{{applicant_class_3}}</td><td>{{applicant_date_3}}</td><td><span class="badge new">New</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><h2>Quick Actions</h2></div>
+              <div class="panel-body">
+                <button class="btn btn-primary btn-block" style="margin-bottom:10px">+ Add News Article</button>
+                <button class="btn btn-outline btn-block" style="margin-bottom:10px">+ Add Event</button>
+                <button class="btn btn-outline btn-block" style="margin-bottom:10px">+ Upload Gallery Photos</button>
+                <button class="btn btn-outline btn-block">+ Post Notice</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head"><h2>Manage Content Modules</h2></div>
+            <div class="panel-body">
+              <div class="manage-grid">
+                <div class="manage-card"><div class="mc-icon">&#128240;</div><h3>News</h3><p>Create &amp; edit articles</p><button class="btn btn-sm btn-primary" data-go="news">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#128197;</div><h3>Events</h3><p>School calendar events</p><button class="btn btn-sm btn-primary" data-go="events">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#128247;</div><h3>Gallery</h3><p>Photos &amp; albums</p><button class="btn btn-sm btn-primary" data-go="gallery">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#128190;</div><h3>Downloads</h3><p>Forms &amp; documents</p><button class="btn btn-sm btn-primary" data-go="downloads">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#128100;</div><h3>Staff</h3><p>Directory &amp; profiles</p><button class="btn btn-sm btn-primary" data-go="staff">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#127891;</div><h3>Admissions</h3><p>Enquiries &amp; intake</p><button class="btn btn-sm btn-primary" data-go="admissions">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#128226;</div><h3>Notices</h3><p>Announcements</p><button class="btn btn-sm btn-primary" data-go="notices">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#127912;</div><h3>Hero Slides</h3><p>Homepage banners</p><button class="btn btn-sm btn-primary" data-go="hero">Manage</button></div>
+                <div class="manage-card"><div class="mc-icon">&#10067;</div><h3>FAQs</h3><p>Questions &amp; answers</p><button class="btn btn-sm btn-primary" data-go="faqs">Manage</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Generic table-based modules -->
+        <section class="admin-pane" data-pane="news" hidden>
+          <div class="panel">
+            <div class="panel-head"><h2>Manage News</h2><button class="btn btn-sm btn-primary">+ New Article</button></div>
+            <div class="panel-body">
+              <table class="admin-table">
+                <thead><tr><th>Title</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+                <tbody>
+                  <tr><td>{{news_title_1}}</td><td>{{news_date_1}}</td><td><span class="badge published">Published</span></td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr>
+                  <tr><td>{{news_title_2}}</td><td>{{news_date_2}}</td><td><span class="badge draft">Draft</span></td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel"><div class="panel-head"><h2>Add / Edit Article</h2></div><div class="panel-body">
+            <form onsubmit="return false">
+              <div class="form-grid">
+                <div class="form-group full"><label>Title</label><input type="text" placeholder="Article title"></div>
+                <div class="form-group"><label>Date</label><input type="date"></div>
+                <div class="form-group"><label>Status</label><select><option>Draft</option><option>Published</option></select></div>
+                <div class="form-group full"><label>Featured Image</label><input type="file"></div>
+                <div class="form-group full"><label>Content</label><textarea rows="6" placeholder="Write the article..."></textarea></div>
+              </div>
+              <button class="btn btn-primary">Save Article</button>
+            </form></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="events" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Events</h2><button class="btn btn-sm btn-primary">+ New Event</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Event</th><th>Date</th><th>Venue</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{event_title_1}}</td><td>{{event_date_1}}</td><td>{{event_venue_1}}</td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr>
+          <tr><td>{{event_title_2}}</td><td>{{event_date_2}}</td><td>{{event_venue_2}}</td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="gallery" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Gallery</h2><button class="btn btn-sm btn-primary">+ Upload Photos</button></div>
+          <div class="panel-body"><p class="placeholder-note">Albums and images load from <code>{{gallery_images}}</code>.</p>
+          <div class="manage-grid">
+            <div class="manage-card"><div class="mc-icon">&#128444;</div><h3>{{album_name_1}}</h3><p>{{album_count_1}} photos</p><button class="btn btn-sm btn-outline">Open</button></div>
+            <div class="manage-card"><div class="mc-icon">&#128444;</div><h3>{{album_name_2}}</h3><p>{{album_count_2}} photos</p><button class="btn btn-sm btn-outline">Open</button></div>
+          </div></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="downloads" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Downloads</h2><button class="btn btn-sm btn-primary">+ Upload File</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Document</th><th>Type</th><th>Size</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{download_title_1}}</td><td>PDF</td><td>{{download_size_1}}</td><td class="row-actions"><a href="#">Replace</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="hero" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Hero Slides</h2><button class="btn btn-sm btn-primary">+ Add Slide</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Headline</th><th>Order</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{slide_title_1}}</td><td>1</td><td><span class="badge published">Active</span></td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="notices" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Notices</h2><button class="btn btn-sm btn-primary">+ Post Notice</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Notice</th><th>Date</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{notice_title_1}}</td><td>{{notice_date_1}}</td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="faqs" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage FAQs</h2><button class="btn btn-sm btn-primary">+ Add FAQ</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Question</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{faq_question_1}}</td><td><span class="badge published">Published</span></td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="staff" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Staff</h2><button class="btn btn-sm btn-primary">+ Add Staff</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Name</th><th>Position</th><th>Department</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{staff_name_1}}</td><td>{{staff_role_1}}</td><td>{{staff_dept_1}}</td><td class="row-actions"><a href="#">Edit</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+        <section class="admin-pane" data-pane="admissions" hidden>
+          <div class="panel"><div class="panel-head"><h2>Manage Admissions</h2><button class="btn btn-sm btn-outline">Export</button></div>
+          <div class="panel-body"><table class="admin-table"><thead><tr><th>Applicant</th><th>Class</th><th>Parent Contact</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody><tr><td>{{applicant_name_1}}</td><td>{{applicant_class_1}}</td><td>{{applicant_contact_1}}</td><td><span class="badge new">New</span></td><td class="row-actions"><a href="#">Review</a><a href="#" class="del">Delete</a></td></tr></tbody></table></div></div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // SESSION placeholder: a real backend would verify the admin session here
+    // and redirect to admin-login.html if not authenticated.
+    (function () {
+      var sidebar = document.getElementById('adminSidebar');
+      document.getElementById('menuBtn').addEventListener('click', function () {
+        sidebar.classList.toggle('open');
+      });
+      var navlinks = document.querySelectorAll('.admin-nav a[data-section]');
+      var panes = document.querySelectorAll('.admin-pane');
+      var title = document.getElementById('pageTitle');
+      function show(section, label) {
+        panes.forEach(function (p) { p.hidden = p.dataset.pane !== section; });
+        navlinks.forEach(function (l) { l.classList.toggle('active', l.dataset.section === section); });
+        if (label) title.textContent = label;
+        sidebar.classList.remove('open');
+        window.scrollTo(0, 0);
+      }
+      navlinks.forEach(function (l) {
+        l.addEventListener('click', function (e) { e.preventDefault(); show(l.dataset.section, l.textContent.trim()); });
+      });
+      document.querySelectorAll('[data-go]').forEach(function (b) {
+        b.addEventListener('click', function () { show(b.dataset.go, b.closest('.manage-card').querySelector('h3').textContent); });
+      });
+    })();
+  </script>
+</body>
+</html>

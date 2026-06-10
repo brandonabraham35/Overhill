@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Overhill Junior School</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <img src="images/logo.png" alt="Overhill Junior School">
+      <h1>Admin Portal</h1>
+      <p class="sub">Overhill Junior School &mdash; Content Management</p>
+
+      <!-- Login UI only. Authentication is a placeholder for future backend. -->
+      <form id="loginForm" action="#" method="post" autocomplete="off">
+        <div class="form-group">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" name="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password">
+        </div>
+        <div class="login-options">
+          <label><input type="checkbox" id="remember"> Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+
+      <p class="login-note">
+        <strong>Note:</strong> No credentials are hardcoded. Authentication,
+        sessions and the administrator account will be wired to the backend
+        database later. Only one administrator account will exist.
+      </p>
+      <a href="index.html" class="back-link">&larr; Back to website</a>
+    </div>
+  </div>
+
+  <script>
+    // Authentication placeholder - to be connected to backend
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // TODO (backend): POST credentials -> verify against DB -> create session.
+      //   const res = await fetch('/api/admin/login', { method:'POST', body: ... })
+      //   if (res.ok) { /* set session */ window.location.href = 'admin-dashboard.html'; }
+      // SESSION placeholder: sessionStorage / httpOnly cookie set by server.
+      // DATABASE placeholder: single administrator record.
+      window.location.href = 'admin-dashboard.html';
+    });
+  </script>
+</body>
+</html>
