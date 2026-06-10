@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsletter Archive | Overhill Junior School</title>
-  <meta name="description" content="Newsletter Archive at Overhill Junior School - Knowledge Is Power.">
+  <title>Photo Gallery | Overhill Junior School</title>
+  <meta name="description" content="View photos of Overhill Junior School facilities, events, and student life.">
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,7 +36,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
       <nav class="main-nav" id="mainNav">
         <ul>
-        <li class=""><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="has-dropdown">
           <a href="why-overhill.html">Why Overhill <span class="caret">&#9662;</span></a>
           <ul class="dropdown"><li><a href="school-history.html">School History</a></li><li><a href="vision-mission.html">Vision & Mission</a></li><li><a href="core-values.html">Core Values</a></li><li><a href="proprietor-message.html">Proprietor's Message</a></li><li><a href="chairman-message.html">Chairman's Message</a></li><li><a href="headteacher-message.html">Headteacher's Message</a></li><li><a href="leadership-team.html">Leadership Team</a></li><li><a href="staff-directory.html">Staff Directory</a></li></ul>
@@ -61,33 +61,26 @@
           <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
           <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li><li><a href="gallery.html">Photo Gallery</a></li></ul>
         </li>
-        <li class=""><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <section class="page-banner">
+
+  <section class="page-hero">
     <div class="container">
-      <h1>Newsletter Archive</h1>
-      <p class="breadcrumb"><a href="index.html">Home</a> &raquo; Newsletter Archive</p>
+      <h1>Photo Gallery</h1>
+      <nav class="breadcrumb"><a href="index.html">Home</a> &raquo; <a href="news-events.html">News & Events</a> &raquo; <span>Gallery</span></nav>
     </div>
   </section>
-  <section class="section"><div class="container">
-    <div class="content-layout with-sidebar">
-      <div class="content-main">
-        <p class="lead">Browse and download past editions of our school newsletter.</p><div class="cms-placeholder"><span class="cms-tag">{{newsletter_archive}}</span><p>This content area will be populated from the admin dashboard / CMS.</p></div><ul class="download-list"><li><span class="file-icon">PDF</span><div><strong>{{newsletter_title_1}}</strong><p>{{newsletter_date_1}}</p></div><a href="#" class="btn btn-sm btn-primary">Download</a></li><li><span class="file-icon">PDF</span><div><strong>{{newsletter_title_2}}</strong><p>{{newsletter_date_2}}</p></div><a href="#" class="btn btn-sm btn-primary">Download</a></li><li><span class="file-icon">PDF</span><div><strong>{{newsletter_title_3}}</strong><p>{{newsletter_date_3}}</p></div><a href="#" class="btn btn-sm btn-primary">Download</a></li><li><span class="file-icon">PDF</span><div><strong>{{newsletter_title_4}}</strong><p>{{newsletter_date_4}}</p></div><a href="#" class="btn btn-sm btn-primary">Download</a></li></ul>
+
+  <section class="section">
+    <div class="container">
+      <div id="galleryContainer">
+        <p>Loading albums...</p>
       </div>
-      
-        <aside class="sidebar">
-          <h3>In This Section</h3>
-          <ul class="side-nav"><li class=""><a href="school-news.html">School News</a></li><li class=""><a href="school-events.html">School Events</a></li><li class=""><a href="announcements.html">Announcements</a></li><li class="active"><a href="newsletter-archive.html">Newsletter Archive</a></li></ul>
-          <div class="side-cta">
-            <h4>Ready to Join?</h4>
-            <p>Give your child the gift of quality education.</p>
-            <a href="admission-information.html" class="btn btn-light btn-block">Apply Now</a>
-          </div>
-        </aside>
-    </div></div></section>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -108,7 +101,7 @@
           <li><a href="fee-structure.html">Fee Structure</a></li>
           <li><a href="school-calendar.html">School Calendar</a></li>
           <li><a href="download-forms.html">Download Forms</a></li>
-          <li><a href="school-news.html">News &amp; Events</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -126,13 +119,12 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; <span id="year"></span> Overhill Junior School. All rights reserved. &nbsp;|&nbsp; Content placeholders ready for CMS integration.</p>
+        <p>&copy; <span id="year"></span> Overhill Junior School. All rights reserved.</p>
       </div>
     </div>
   </footer>
   <a href="https://wa.me/256752913759" class="whatsapp-float" aria-label="WhatsApp">WhatsApp</a>
   <script src="js/main.js"></script>
   <script src="js/api.js"></script>
-
 </body>
 </html>

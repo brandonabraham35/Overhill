@@ -20,8 +20,7 @@
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Twitter">t</a>
         <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="YouTube">yt</a>
-        <a href="admin/login.php" class="admin-link">Admin</a>
+        <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
       </div>
     </div>
   </div>
@@ -60,7 +59,7 @@
         </li>
         <li class="has-dropdown">
           <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
-          <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li></ul>
+          <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li><li><a href="gallery.html">Photo Gallery</a></li></ul>
         </li>
         <li class=""><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -68,46 +67,18 @@
     </div>
   </header>
   <section class="hero-slider" id="heroSlider">
-    
-        <div class="slide active" style="background-image:url('images/hero1.jpg')">
-          <div class="slide-overlay"></div>
-          <div class="container slide-content">
-            <span class="slide-kicker">Knowledge Is Power</span>
-            <h1>Welcome to Overhill Junior School</h1>
-            <p>Nurturing confident, curious learners for a bright future.</p>
-            <div class="slide-actions">
-              <a href="admission-information.html" class="btn btn-primary">Apply for Admission</a>
-              <a href="contact.html" class="btn btn-outline">Visit Us</a>
-            </div>
-          </div>
+    <div class="slide active" style="background-image:url('images/hero1.jpg')">
+      <div class="slide-overlay"></div>
+      <div class="container slide-content">
+        <span class="slide-kicker">Knowledge Is Power</span>
+        <h1>Welcome to Overhill Junior School</h1>
+        <p>Nurturing confident, curious learners for a bright future.</p>
+        <div class="slide-actions">
+          <a href="admission-information.html" class="btn btn-primary">Apply for Admission</a>
+          <a href="contact.html" class="btn btn-outline">Visit Us</a>
         </div>
-        <div class="slide" style="background-image:url('images/hero2.jpg')">
-          <div class="slide-overlay"></div>
-          <div class="container slide-content">
-            <span class="slide-kicker">Knowledge Is Power</span>
-            <h1>A Love for Learning</h1>
-            <p>Inspiring active learners to become responsible citizens and leaders.</p>
-            <div class="slide-actions">
-              <a href="why-overhill.html" class="btn btn-primary">Why Overhill</a>
-              <a href="contact.html" class="btn btn-outline">Visit Us</a>
-            </div>
-          </div>
-        </div>
-        <div class="slide" style="background-image:url('images/hero3.jpg')">
-          <div class="slide-overlay"></div>
-          <div class="container slide-content">
-            <span class="slide-kicker">Knowledge Is Power</span>
-            <h1>Play, Discover, Grow</h1>
-            <p>A holistic education in an inspiring and conducive environment.</p>
-            <div class="slide-actions">
-              <a href="special-programmes.html" class="btn btn-primary">Our Programmes</a>
-              <a href="contact.html" class="btn btn-outline">Visit Us</a>
-            </div>
-          </div>
-        </div>
-    <button class="slider-arrow prev" id="prevSlide" aria-label="Previous">&#10094;</button>
-    <button class="slider-arrow next" id="nextSlide" aria-label="Next">&#10095;</button>
-    <div class="slider-dots"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button></div>
+      </div>
+    </div>
   </section>
 
   <section class="section quick-cards">
@@ -150,19 +121,8 @@
     <div class="container">
       <div class="section-head"><span class="eyebrow">Stay Updated</span><h2>Latest News &amp; Events</h2><p>News articles are managed through the admin dashboard.</p></div>
       
-      <div class="news-grid">
-        <article class="news-card">
-          <div class="news-date"><span class="d">{{news_day}}</span><span class="m">{{news_month}}</span></div>
-          <div class="news-body"><h3>{{news_title_1}}</h3><p>{{news_excerpt_1}}</p><a href="school-news.html">Read more &rarr;</a></div>
-        </article>
-        <article class="news-card">
-          <div class="news-date"><span class="d">{{news_day}}</span><span class="m">{{news_month}}</span></div>
-          <div class="news-body"><h3>{{news_title_2}}</h3><p>{{news_excerpt_2}}</p><a href="school-news.html">Read more &rarr;</a></div>
-        </article>
-        <article class="news-card">
-          <div class="news-date"><span class="d">{{news_day}}</span><span class="m">{{news_month}}</span></div>
-          <div class="news-body"><h3>{{news_title_3}}</h3><p>{{news_excerpt_3}}</p><a href="school-news.html">Read more &rarr;</a></div>
-        </article>
+      <div class="news-grid" id="newsList">
+        <p>Loading news...</p>
       </div>
       <div class="center"><a href="school-news.html" class="btn btn-outline-dark">All News &amp; Events</a></div>
     </div>
@@ -208,7 +168,7 @@
           <a href="#" aria-label="Facebook">f</a>
           <a href="#" aria-label="Twitter">t</a>
           <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
         </div>
       </div>
     </div>

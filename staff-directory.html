@@ -20,8 +20,7 @@
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Twitter">t</a>
         <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="YouTube">yt</a>
-        <a href="admin-login.html" class="admin-link">Admin</a>
+        <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
       </div>
     </div>
   </div>
@@ -60,7 +59,7 @@
         </li>
         <li class="has-dropdown">
           <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
-          <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li></ul>
+          <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li><li><a href="gallery.html">Photo Gallery</a></li></ul>
         </li>
         <li class=""><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -76,7 +75,10 @@
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">Our qualified and caring teaching and support staff.</p><div class="cms-placeholder"><span class="cms-tag">{{staff_list}}</span><p>This content area will be populated from the admin dashboard / CMS.</p></div><table class="data-table"><thead><tr><th>Name</th><th>Position</th><th>Department</th><th>Email</th></tr></thead><tbody><tr><td>{{staff_name_1}}</td><td>{{staff_role_1}}</td><td>{{staff_dept_1}}</td><td>{{staff_email_1}}</td></tr><tr><td>{{staff_name_2}}</td><td>{{staff_role_2}}</td><td>{{staff_dept_2}}</td><td>{{staff_email_2}}</td></tr><tr><td>{{staff_name_3}}</td><td>{{staff_role_3}}</td><td>{{staff_dept_3}}</td><td>{{staff_email_3}}</td></tr><tr><td>{{staff_name_4}}</td><td>{{staff_role_4}}</td><td>{{staff_dept_4}}</td><td>{{staff_email_4}}</td></tr><tr><td>{{staff_name_5}}</td><td>{{staff_role_5}}</td><td>{{staff_dept_5}}</td><td>{{staff_email_5}}</td></tr><tr><td>{{staff_name_6}}</td><td>{{staff_role_6}}</td><td>{{staff_dept_6}}</td><td>{{staff_email_6}}</td></tr></tbody></table>
+        <p class="lead">Our qualified and caring teaching and support staff.</p>
+        <div class="staff-grid" id="staffList">
+          <p>Loading staff...</p>
+        </div>
       </div>
       
         <aside class="sidebar">
@@ -121,7 +123,7 @@
           <a href="#" aria-label="Facebook">f</a>
           <a href="#" aria-label="Twitter">t</a>
           <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="YouTube">yt</a>
+          <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
         </div>
       </div>
     </div>
