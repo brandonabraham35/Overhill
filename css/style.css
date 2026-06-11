@@ -342,3 +342,34 @@ h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;color:var(--navy);font-
 .form-feedback{margin-top:12px;padding:10px 12px;border-radius:8px;font-size:.9rem}
 .form-feedback.ok{background:#e6f7ec;color:#0a6b34}
 .form-feedback.err{background:#fdecea;color:#b3261e}
+
+/* Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.gallery-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item p {
+  padding: 12px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #eee;
+}
