@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Overhill Junior School</title>
-  <meta name="description" content="Overhill Junior School - Knowledge Is Power. A private primary and nursery school in Wakiso, Uganda.">
+  <meta name="description" content="Overhill Junior School - {{motto}}. A private primary and nursery school in {{address}}.">
   <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,25 +12,25 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-contacts">
-        <span>&#9742; +256 752 913 759</span>
-        <span>&#9993; overhilljuniorschool@gmail.com</span>
-        <span>&#9873; Wakiso, Uganda</span>
+        <span>&#9742; {{phone}}</span>
+        <span>&#9993; {{email}}</span>
+        <span>&#9873; {{address}}</span>
       </div>
       <div class="topbar-social">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Twitter">t</a>
-        <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
+        <a href="#" aria-label="Facebook" href="{{facebook_url}}">f</a>
+        <a href="#" aria-label="Twitter" href="{{twitter_url}}">t</a>
+        <a href="#" aria-label="Instagram" href="{{instagram_url}}">ig</a>
+        <a href="#" aria-label="YouTube" href="{{youtube_url}}">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
       </div>
     </div>
   </div>
   <header class="site-header transparent" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <img src="images/logo.png" alt="Overhill Junior School logo" class="brand-logo">
+        <img src="{{site_logo}}" alt="Overhill Junior School logo" class="brand-logo">
         <span class="brand-text">
           <span class="brand-name">Overhill Junior School</span>
-          <span class="brand-motto">Knowledge Is Power</span>
+          <span class="brand-motto">{{motto}}</span>
         </span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
@@ -55,7 +55,7 @@
         </li>
         <li class="has-dropdown">
           <a href="special-programmes.html">Special Programmes <span class="caret">&#9662;</span></a>
-          <ul class="dropdown"><li><a href="programme-computer.html">Computer Lessons</a></li><li><a href="programme-reading.html">Reading Programme</a></li><li><a href="programme-handwriting.html">Handwriting Programme</a></li><li><a href="programme-games.html">Games and Sports</a></li><li><a href="programme-vocational.html">Vocational Skills</a></li><li><a href="programme-daycare.html">Day Care</a></li><li><a href="programme-cocurricular.html">Co-Curricular Activities</a></li></ul>
+          <ul class="dropdown"><li><a href="programme-computer.html">Computer Lessons</a></li><li><a href="programme-reading.html">Reading Programme</a></li><li><a href="programme-handwriting.html">Handwriting Programme</a></li><li><a href="programme-games.html">Games and Sports</a></li><li><a href="programme-vocational.html">Vocational Skills</a></li><li><a href="programme-daycare.html">Day Care</a></li><li><a href="programme-cocurricular.html">{{quick_card_3_title}} Activities</a></li></ul>
         </li>
         <li class="has-dropdown">
           <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
@@ -70,7 +70,7 @@
     <div class="slide active" style="background-image:url('images/hero1.jpg')">
       <div class="slide-overlay"></div>
       <div class="container slide-content">
-        <span class="slide-kicker">Knowledge Is Power</span>
+        <span class="slide-kicker">{{motto}}</span>
         <h1>Welcome to Overhill Junior School</h1>
         <p>Nurturing confident, curious learners for a bright future.</p>
         <div class="slide-actions">
@@ -82,7 +82,7 @@
   </section>
 
   <section class="section quick-cards">
-    <div class="container"><div class="card-grid"><div class="info-card"><div class="card-icon">&#127891;</div><h3>Admissions Open</h3><p>Enrol your child for Nursery and Primary. Simple steps, friendly process.</p></div><div class="info-card"><div class="card-icon">&#128218;</div><h3>Our Curriculum</h3><p>A holistic, child-centred curriculum building strong foundations.</p></div><div class="info-card"><div class="card-icon">&#127942;</div><h3>Co-Curricular</h3><p>Sports, clubs, music and vocational skills for well-rounded learners.</p></div><div class="info-card"><div class="card-icon">&#128205;</div><h3>Visit Our Campus</h3><p>Located in Wakiso. Come and experience Overhill for yourself.</p></div></div></div>
+    <div class="container"><div class="card-grid"><div class="info-card"><div class="card-icon">&#127891;</div><h3>{{quick_card_1_title}}</h3><p>{{quick_card_1_text}}</p></div><div class="info-card"><div class="card-icon">&#128218;</div><h3>{{quick_card_2_title}}</h3><p>{{quick_card_2_text}}</p></div><div class="info-card"><div class="card-icon">&#127942;</div><h3>{{quick_card_3_title}}</h3><p>{{quick_card_3_text}}</p></div><div class="info-card"><div class="card-icon">&#128205;</div><h3>{{quick_card_4_title}}</h3><p>{{quick_card_4_text}}</p></div></div></div>
   </section>
 
   <section class="section">
@@ -140,9 +140,9 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <img src="images/logo.png" alt="Overhill Junior School" class="footer-logo">
+        <img src="{{site_logo}}" alt="Overhill Junior School" class="footer-logo">
         <h3>Overhill Junior School</h3>
-        <p class="muted">Knowledge Is Power</p>
+        <p class="muted">{{motto}}</p>
         <p class="muted">A private primary &amp; nursery school nurturing confident, curious learners since 2024.</p>
       </div>
       <div class="footer-col">
@@ -161,14 +161,14 @@
       </div>
       <div class="footer-col">
         <h4>Get In Touch</h4>
-        <p class="muted">Wakiso, Uganda<br>P.O. Box 119654</p>
-        <p class="muted">Tel: +256 752 913 759<br>Tel: +256 749 567 732</p>
-        <p class="muted">Email: overhilljuniorschool@gmail.com</p>
+        <p class="muted">{{address}}<br>P.O. Box 119654</p>
+        <p class="muted">Tel: {{phone}}<br>Tel: +256 749 567 732</p>
+        <p class="muted">Email: {{email}}</p>
         <div class="footer-social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Twitter">t</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
+          <a href="#" aria-label="Facebook" href="{{facebook_url}}">f</a>
+          <a href="#" aria-label="Twitter" href="{{twitter_url}}">t</a>
+          <a href="#" aria-label="Instagram" href="{{instagram_url}}">ig</a>
+          <a href="#" aria-label="YouTube" href="{{youtube_url}}">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
         </div>
       </div>
     </div>

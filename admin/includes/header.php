@@ -33,6 +33,7 @@ function nav_active(string $f): string { return basename($_SERVER['PHP_SELF']) =
       <a class="<?= nav_active('hero.php') ?>" href="hero.php">Hero Slides</a>
       <a class="<?= nav_active('announcements.php') ?>" href="announcements.php">Announcements</a>
       <a class="<?= nav_active('settings.php') ?>" href="settings.php">Settings</a>
+      <a class="<?= nav_active('backups.php') ?>" href="backups.php">Backups</a>
     </nav>
   </aside>
   <div class="admin-main">
