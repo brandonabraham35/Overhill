@@ -29,6 +29,7 @@ function nav_active(string $f): string { return basename($_SERVER['PHP_SELF']) =
       <a class="<?= nav_active('leadership.php') ?>" href="leadership.php">Leadership</a>
       <a class="<?= nav_active('faqs.php') ?>" href="faqs.php">FAQs</a>
       <a class="<?= nav_active('messages.php') ?>" href="messages.php">Messages</a>
+      <a class="<?= nav_active('email_logs.php') ?>" href="email_logs.php">Email Logs</a>
       <a class="<?= nav_active('hero.php') ?>" href="hero.php">Hero Slides</a>
       <a class="<?= nav_active('announcements.php') ?>" href="announcements.php">Announcements</a>
       <a class="<?= nav_active('settings.php') ?>" href="settings.php">Settings</a>

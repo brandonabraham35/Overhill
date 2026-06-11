@@ -23,4 +23,15 @@ $GLOBALS['ALLOWED_DOC_EXT']   = ['pdf', 'docx'];
 // Session lifetime (seconds) for idle timeout
 define('SESSION_TIMEOUT', 30 * 60); // 30 minutes
 
+// SMTP Settings
+define('SMTP_HOST', getenv('SMTP_HOST') ?: 'smtp.gmail.com');
+define('SMTP_PORT', getenv('SMTP_PORT') ?: 587);
+define('SMTP_USER', getenv('SMTP_USER') ?: '');
+define('SMTP_PASS', getenv('SMTP_PASS') ?: '');
+define('SMTP_AUTH', true);
+define('SMTP_SECURE', 'tls');
+define('SMTP_FROM_EMAIL', getenv('SMTP_FROM_EMAIL') ?: 'overhilljuniorschool@gmail.com');
+define('SMTP_FROM_NAME', 'Overhill Junior School');
+define('ADMIN_EMAIL', getenv('ADMIN_EMAIL') ?: 'overhilljuniorschool@gmail.com');
+
 date_default_timezone_set('Africa/Kampala');

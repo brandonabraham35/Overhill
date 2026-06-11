@@ -159,6 +159,16 @@ CREATE TABLE IF NOT EXISTS site_settings (
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS email_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  recipient VARCHAR(255) NOT NULL,
+  subject VARCHAR(255) NOT NULL,
+  body MEDIUMTEXT NOT NULL,
+  status ENUM('sent', 'failed') NOT NULL,
+  error_message TEXT NULL,
+  sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
 INSERT IGNORE INTO site_settings (setting_key, setting_value) VALUES
   ('school_name', 'Overhill Junior School'),
   ('phone', '+256 752 913759'),
