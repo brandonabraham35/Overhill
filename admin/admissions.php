@@ -14,6 +14,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $status = $_POST['status'] ?? 'pending';
         if (in_array($status,['pending','reviewing','accepted','rejected'],true)) {
             $pdo->prepare('UPDATE admissions SET status=? WHERE id=?')->execute([$status,$id]);
+
+            // Send Notification Email on Status Change
+            if ($status === 'accepted' || $status === 'rejected') {
+                $row = crud_find2('admissions', $id);
+                if ($row && $row['parent_email']) {
+                    require_once BASE_PATH . '/includes/EmailService.php';
+                    $emailData = [
+                        'parent_name' => $row['parent_name'],
+                        'student_name' => $row['student_name']
+                    ];
+                    if ($status === 'accepted') {
+                        EmailService::sendAdmissionApproved($row['parent_email'], $emailData);
+                    } else {
+                        EmailService::sendAdmissionRejected($row['parent_email'], $emailData);
+                    }
+                }
+            }
+
             $_SESSION['flash']='Status updated.';
         }
     }

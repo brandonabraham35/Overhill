@@ -27,4 +27,24 @@ if (!empty($_FILES['document']['name'])) {
 }
 db()->prepare('INSERT INTO admissions (student_name,date_of_birth,gender,parent_name,parent_contact,parent_email,previous_school,desired_class,document) VALUES (?,?,?,?,?,?,?,?,?)')
     ->execute([$student, $dob ?: null, $gender ?: null, $parent, $contact, $pemail ?: null, $prev ?: null, $class, $docUrl]);
+
+// Email Notification
+require_once BASE_PATH . '/includes/EmailService.php';
+$emailData = [
+    'parent_name' => $parent,
+    'student_name' => $student,
+    'desired_class' => $class
+];
+
+if ($pemail) {
+    EmailService::sendAdmissionConfirmation($pemail, $emailData);
+}
+
+// Admin Notification
+$adminDetails = "<li>Student: $student</li><li>Parent: $parent</li><li>Class: $class</li><li>Contact: $contact</li>";
+EmailService::sendAdminNotification("New Admission Application: $student", [
+    'action' => 'New Admission Application',
+    'details' => $adminDetails
+]);
+
 json_response(['ok' => true, 'message' => 'Application submitted successfully. We will contact you soon.']);

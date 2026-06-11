@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 80%; margin: 20px auto; border: 1px solid #ddd; padding: 20px; }
+        .header { text-align: center; border-bottom: 2px solid #004a99; padding-bottom: 10px; }
+        .footer { font-size: 12px; color: #777; border-top: 1px solid #ddd; padding-top: 10px; margin-top: 20px; }
+        .school-name { color: #004a99; font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="school-name">Overhill Junior School</div>
+            <p>Knowledge Is Power</p>
+        </div>
+        <p>Dear {{parent_name}},</p>
+        <p>Thank you for choosing Overhill Junior School. We have received your admission application for <strong>{{student_name}}</strong> for class <strong>{{desired_class}}</strong>.</p>
+        <p>Our admissions team will review the application and contact you shortly.</p>
+        <p>Best regards,<br>Admissions Office<br>Overhill Junior School</p>
+        <div class="footer">
+            <p>Wakiso, Uganda | +256 752 913 759 | overhilljuniorschool@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

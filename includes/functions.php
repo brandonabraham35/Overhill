@@ -146,11 +146,9 @@ function handle_upload(array $file, string $type = 'image'): array
 function delete_upload(?string $url): void
 {
     if (!$url) return;
-
     $pathPart = parse_url($url, PHP_URL_PATH) ?: $url;
     $pathPart = ltrim($pathPart, '/');
     $path = BASE_PATH . '/' . $pathPart;
-
     if (is_file($path) && strpos(realpath($path), realpath(UPLOAD_PATH)) === 0) {
         @unlink($path);
     }

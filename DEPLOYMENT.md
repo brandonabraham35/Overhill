@@ -51,7 +51,8 @@ The following directories must be writable by the web server (usually user `www-
 ## 5. Deployment Steps
 
 1.  Upload all files to the server root (or your desired subdirectory).
-2.  Configure `/config/config.php`.
+2.  Run `composer install` to download PHPMailer and other dependencies.
+3.  Configure `/config/config.php`.
 3.  Import the database schema.
 4.  Visit `yourdomain.com/install.php` to setup the Admin.
 5.  Log in at `yourdomain.com/admin/login.php` to begin populating content (News, Events, Slider, etc.).

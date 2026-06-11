@@ -1,131 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Overhill Junior School</title>
-  <meta name="description"
-    content="Overhill Junior School - Knowledge Is Power. A private primary and nursery school in Wakiso, Uganda.">
-  <link rel="icon" href="images/LOGO.jpeg">
+  <meta name="description" content="Overhill Junior School - {{motto}}. A private primary and nursery school in {{address}}.">
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-contacts">
-        <span>&#9742; +256 752 913 759</span>
-        <span>&#9993; overhilljuniorschool@gmail.com</span>
-        <span>&#9873; Wakiso, Uganda</span>
+        <span>&#9742; {{phone}}</span>
+        <span>&#9993; {{email}}</span>
+        <span>&#9873; {{address}}</span>
       </div>
       <div class="topbar-social">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Twitter">t</a>
-        <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="YouTube">yt</a>
-        <a href="admin/login.php" class="admin-link">Admin</a>
+        <a href="#" aria-label="Facebook" href="{{facebook_url}}">f</a>
+        <a href="#" aria-label="Twitter" href="{{twitter_url}}">t</a>
+        <a href="#" aria-label="Instagram" href="{{instagram_url}}">ig</a>
+        <a href="#" aria-label="YouTube" href="{{youtube_url}}">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
       </div>
     </div>
   </div>
   <header class="site-header transparent" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="index.html">
-        <img src="images/LOGO.jpeg" alt="Overhill Junior School logo" class="brand-logo">
+        <img src="{{site_logo}}" alt="Overhill Junior School logo" class="brand-logo">
         <span class="brand-text">
           <span class="brand-name">Overhill Junior School</span>
-          <span class="brand-motto">Knowledge Is Power</span>
+          <span class="brand-motto">{{motto}}</span>
         </span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
       <nav class="main-nav" id="mainNav">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="has-dropdown">
-            <a href="why-overhill.html">Why Overhill <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="school-history.html">School History</a></li>
-              <li><a href="vision-mission.html">Vision & Mission</a></li>
-              <li><a href="core-values.html">Core Values</a></li>
-              <li><a href="proprietor-message.html">Proprietor's Message</a></li>
-              <li><a href="chairman-message.html">Chairman's Message</a></li>
-              <li><a href="headteacher-message.html">Headteacher's Message</a></li>
-              <li><a href="leadership-team.html">Leadership Team</a></li>
-              <li><a href="staff-directory.html">Staff Directory</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="facilities.html">Facilities <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="facility-nursery.html">Nursery Section</a></li>
-              <li><a href="facility-primary.html">Primary Section</a></li>
-              <li><a href="facility-library.html">Library</a></li>
-              <li><a href="facility-computer-lab.html">Computer Laboratory</a></li>
-              <li><a href="facility-science-lab.html">Science Laboratory</a></li>
-              <li><a href="facility-hall.html">Multipurpose Hall</a></li>
-              <li><a href="facility-sick-bay.html">Sick Bay</a></li>
-              <li><a href="facility-kitchen.html">Kitchen</a></li>
-              <li><a href="facility-transport.html">School Transport</a></li>
-              <li><a href="facility-sports.html">Sports Facilities</a></li>
-              <li><a href="facility-washrooms.html">School Washrooms</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="parents.html">Parents <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="admission-information.html">Admission Information</a></li>
-              <li><a href="fee-structure.html">Fee Structure</a></li>
-              <li><a href="school-calendar.html">School Calendar</a></li>
-              <li><a href="school-rules.html">School Rules</a></li>
-              <li><a href="parent-guidelines.html">Parent Guidelines</a></li>
-              <li><a href="communication-policy.html">Communication Policy</a></li>
-              <li><a href="download-forms.html">Download Forms</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="students.html">Students <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="school-anthem.html">School Anthem</a></li>
-              <li><a href="school-prayer.html">School Prayer</a></li>
-              <li><a href="clubs-societies.html">Clubs and Societies</a></li>
-              <li><a href="student-leadership.html">Leadership</a></li>
-              <li><a href="student-articles.html">Student Articles</a></li>
-              <li><a href="student-welfare.html">Student Welfare</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="special-programmes.html">Special Programmes <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="programme-computer.html">Computer Lessons</a></li>
-              <li><a href="programme-reading.html">Reading Programme</a></li>
-              <li><a href="programme-handwriting.html">Handwriting Programme</a></li>
-              <li><a href="programme-games.html">Games and Sports</a></li>
-              <li><a href="programme-vocational.html">Vocational Skills</a></li>
-              <li><a href="programme-daycare.html">Day Care</a></li>
-              <li><a href="programme-cocurricular.html">Co-Curricular Activities</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
-            <ul class="dropdown">
-              <li><a href="school-news.html">School News</a></li>
-              <li><a href="school-events.html">School Events</a></li>
-              <li><a href="announcements.html">Announcements</a></li>
-              <li><a href="newsletter-archive.html">Newsletter Archive</a></li>
-              <li><a href="gallery.html">Photo Gallery</a></li>
-            </ul>
-          </li>
-          <li class=""><a href="contact.html">Contact Us</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="why-overhill.html">Why Overhill <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="school-history.html">School History</a></li><li><a href="vision-mission.html">Vision & Mission</a></li><li><a href="core-values.html">Core Values</a></li><li><a href="proprietor-message.html">Proprietor's Message</a></li><li><a href="chairman-message.html">Chairman's Message</a></li><li><a href="headteacher-message.html">Headteacher's Message</a></li><li><a href="leadership-team.html">Leadership Team</a></li><li><a href="staff-directory.html">Staff Directory</a></li></ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="facilities.html">Facilities <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="facility-nursery.html">Nursery Section</a></li><li><a href="facility-primary.html">Primary Section</a></li><li><a href="facility-library.html">Library</a></li><li><a href="facility-computer-lab.html">Computer Laboratory</a></li><li><a href="facility-science-lab.html">Science Laboratory</a></li><li><a href="facility-hall.html">Multipurpose Hall</a></li><li><a href="facility-sick-bay.html">Sick Bay</a></li><li><a href="facility-kitchen.html">Kitchen</a></li><li><a href="facility-transport.html">School Transport</a></li><li><a href="facility-sports.html">Sports Facilities</a></li><li><a href="facility-washrooms.html">School Washrooms</a></li></ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="parents.html">Parents <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="admission-information.html">Admission Information</a></li><li><a href="fee-structure.html">Fee Structure</a></li><li><a href="school-calendar.html">School Calendar</a></li><li><a href="school-rules.html">School Rules</a></li><li><a href="parent-guidelines.html">Parent Guidelines</a></li><li><a href="communication-policy.html">Communication Policy</a></li><li><a href="download-forms.html">Download Forms</a></li></ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="students.html">Students <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="school-anthem.html">School Anthem</a></li><li><a href="school-prayer.html">School Prayer</a></li><li><a href="clubs-societies.html">Clubs and Societies</a></li><li><a href="student-leadership.html">Leadership</a></li><li><a href="student-articles.html">Student Articles</a></li><li><a href="student-welfare.html">Student Welfare</a></li></ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="special-programmes.html">Special Programmes <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="programme-computer.html">Computer Lessons</a></li><li><a href="programme-reading.html">Reading Programme</a></li><li><a href="programme-handwriting.html">Handwriting Programme</a></li><li><a href="programme-games.html">Games and Sports</a></li><li><a href="programme-vocational.html">Vocational Skills</a></li><li><a href="programme-daycare.html">Day Care</a></li><li><a href="programme-cocurricular.html">{{quick_card_3_title}} Activities</a></li></ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="news-events.html">News & Events <span class="caret">&#9662;</span></a>
+          <ul class="dropdown"><li><a href="school-news.html">School News</a></li><li><a href="school-events.html">School Events</a></li><li><a href="announcements.html">Announcements</a></li><li><a href="newsletter-archive.html">Newsletter Archive</a></li><li><a href="gallery.html">Photo Gallery</a></li></ul>
+        </li>
+        <li class=""><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <section class="hero-slider" id="heroSlider">
-    <div class="slide active"
-      style="background-image:url('images/Class.3.jpeg'), url('images/Class.4.jpeg'), url('images/Class.5.jpeg')">
+    <div class="slide active" style="background-image:url('images/hero1.jpg')">
       <div class="slide-overlay"></div>
       <div class="container slide-content">
-        <span class="slide-kicker">Knowledge Is Power</span>
+        <span class="slide-kicker">{{motto}}</span>
         <h1>Welcome to Overhill Junior School</h1>
         <p>Nurturing confident, curious learners for a bright future.</p>
         <div class="slide-actions">
@@ -137,30 +82,7 @@
   </section>
 
   <section class="section quick-cards">
-    <div class="container">
-      <div class="card-grid">
-        <div class="info-card">
-          <div class="card-icon">&#127891;</div>
-          <h3>Admissions Open</h3>
-          <p>Enrol your child for Nursery and Primary. Simple steps, friendly process.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-icon">&#128218;</div>
-          <h3>Our Curriculum</h3>
-          <p>A holistic, child-centred curriculum building strong foundations.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-icon">&#127942;</div>
-          <h3>Co-Curricular</h3>
-          <p>Sports, clubs, music and vocational skills for well-rounded learners.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-icon">&#128205;</div>
-          <h3>Visit Our Campus</h3>
-          <p>Located in Wakiso. Come and experience Overhill for yourself.</p>
-        </div>
-      </div>
-    </div>
+    <div class="container"><div class="card-grid"><div class="info-card"><div class="card-icon">&#127891;</div><h3>{{quick_card_1_title}}</h3><p>{{quick_card_1_text}}</p></div><div class="info-card"><div class="card-icon">&#128218;</div><h3>{{quick_card_2_title}}</h3><p>{{quick_card_2_text}}</p></div><div class="info-card"><div class="card-icon">&#127942;</div><h3>{{quick_card_3_title}}</h3><p>{{quick_card_3_text}}</p></div><div class="info-card"><div class="card-icon">&#128205;</div><h3>{{quick_card_4_title}}</h3><p>{{quick_card_4_text}}</p></div></div></div>
   </section>
 
   <section class="section">
@@ -169,105 +91,63 @@
         <div>
           <span class="eyebrow">Welcome</span>
           <h2>A Place Where Every Child Shines</h2>
-          <p class="lead">Overhill Junior School is a private primary and nursery school founded in 2024 with a vision
-            to provide quality, affordable education to our community and beyond.</p>
-          <p>Our beloved director, Mdm. Nabulya Bridget, founded the school to ensure local children attain quality
-            education that lets them compete on the international stage. We combine caring teachers, a stimulating
-            environment and modern facilities to bring out the best in every learner.</p>
-          <div class="cms-placeholder"><span class="cms-tag">{{welcome_message}}</span>
-            <p>This content area will be populated from the admin dashboard / CMS.</p>
-          </div>
+          <p class="lead">Overhill Junior School is a private primary and nursery school founded in 2024 with a vision to provide quality, affordable education to our community and beyond.</p>
+          <p>Our beloved director, Mdm. Nabulya Bridget, founded the school to ensure local children attain quality education that lets them compete on the international stage. We combine caring teachers, a stimulating environment and modern facilities to bring out the best in every learner.</p>
+          <div class="cms-placeholder"><span class="cms-tag">{{welcome_message}}</span><p>This content area will be populated from the admin dashboard / CMS.</p></div>
           <a href="headteacher-message.html" class="btn btn-primary">Read the Headteacher's Message</a>
         </div>
         <div class="img-frame">
-          <img src="images/Class.1.jpeg" alt="Pupils learning at Overhill Junior School">
+          <img src="images/hero2.jpg" alt="Pupils learning at Overhill Junior School">
+        </div>
+      </div></div>
+  </section>
+  
+      <div class="stats-band">
+        <div class="container stats-grid">
+          <div class="stat"><span class="stat-num">{{years_count}}</span><span class="stat-label">Years of Excellence</span></div>
+          <div class="stat"><span class="stat-num">{{pupils_count}}</span><span class="stat-label">Happy Pupils</span></div>
+          <div class="stat"><span class="stat-num">{{teachers_count}}</span><span class="stat-label">Qualified Teachers</span></div>
+          <div class="stat"><span class="stat-num">{{clubs_count}}</span><span class="stat-label">Clubs &amp; Activities</span></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <div class="stats-band">
-    <div class="container stats-grid">
-      <div class="stat"><span class="stat-num">{{years_count}}</span><span class="stat-label">Years of Excellence</span>
-      </div>
-      <div class="stat"><span class="stat-num">{{pupils_count}}</span><span class="stat-label">Happy Pupils</span></div>
-      <div class="stat"><span class="stat-num">{{teachers_count}}</span><span class="stat-label">Qualified
-          Teachers</span></div>
-      <div class="stat"><span class="stat-num">{{clubs_count}}</span><span class="stat-label">Clubs &amp;
-          Activities</span></div>
-    </div>
-  </div>
   <section class="section section-muted">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">What We Offer</span>
-        <h2>Special Programmes</h2>
-        <p>Designed to make learning exciting and well-rounded for every child.</p>
-      </div>
-      <div class="prog-grid"><a class="prog-card" href="programme-computer.html">
-          <div class="prog-img" style="background-image:url('images/Class.3.jpeg')"></div>
-          <div class="prog-body">
-            <h3>Computer Lessons</h3>
-            <p>Hands-on digital skills from an early age.</p><span class="arrow">Learn more &rarr;</span>
-          </div>
-        </a><a class="prog-card" href="programme-reading.html">
-          <div class="prog-img" style="background-image:url('images/Class\,2.jpeg')"></div>
-          <div class="prog-body">
-            <h3>Reading Programme</h3>
-            <p>Building a lifelong love of books and stories.</p><span class="arrow">Learn more &rarr;</span>
-          </div>
-        </a><a class="prog-card" href="programme-games.html">
-          <div class="prog-img" style="background-image:url('images/Class.5.jpeg')"></div>
-          <div class="prog-body">
-            <h3>Games & Sports</h3>
-            <p>Healthy bodies, healthy minds, great teamwork.</p><span class="arrow">Learn more &rarr;</span>
-          </div>
-        </a></div>
+      <div class="section-head"><span class="eyebrow">What We Offer</span><h2>Special Programmes</h2><p>Designed to make learning exciting and well-rounded for every child.</p></div>
+      <div class="prog-grid"><a class="prog-card" href="programme-computer.html"><div class="prog-img" style="background-image:url('images/facility.jpg')"></div><div class="prog-body"><h3>Computer Lessons</h3><p>Hands-on digital skills from an early age.</p><span class="arrow">Learn more &rarr;</span></div></a><a class="prog-card" href="programme-reading.html"><div class="prog-img" style="background-image:url('images/hero2.jpg')"></div><div class="prog-body"><h3>Reading Programme</h3><p>Building a lifelong love of books and stories.</p><span class="arrow">Learn more &rarr;</span></div></a><a class="prog-card" href="programme-games.html"><div class="prog-img" style="background-image:url('images/hero3.jpg')"></div><div class="prog-body"><h3>Games & Sports</h3><p>Healthy bodies, healthy minds, great teamwork.</p><span class="arrow">Learn more &rarr;</span></div></a></div>
       <div class="center"><a href="special-programmes.html" class="btn btn-outline-dark">View All Programmes</a></div>
     </div>
   </section>
   <section class="section">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">Stay Updated</span>
-        <h2>Latest News &amp; Events</h2>
-        <p>News articles are managed through the admin dashboard.</p>
-      </div>
-
+      <div class="section-head"><span class="eyebrow">Stay Updated</span><h2>Latest News &amp; Events</h2><p>News articles are managed through the admin dashboard.</p></div>
+      
       <div class="news-grid" id="newsList">
         <p>Loading news...</p>
       </div>
       <div class="center"><a href="school-news.html" class="btn btn-outline-dark">All News &amp; Events</a></div>
     </div>
   </section>
-
-  <section class="cta-band" style="background-image:url('images/Class.3.jpeg')">
-    <div class="cta-overlay"></div>
-    <div class="container cta-content">
-      <h2>Give Your Child a Head Start</h2>
-      <p>Admissions are open for Nursery and Primary classes. Join the Overhill family today.</p>
-      <a href="admission-information.html" class="btn btn-primary btn-lg">Apply for Admission</a>
-    </div>
-  </section>
+  
+      <section class="cta-band" style="background-image:url('images/hero1.jpg')">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+          <h2>Give Your Child a Head Start</h2>
+          <p>Admissions are open for Nursery and Primary classes. Join the Overhill family today.</p>
+          <a href="admission-information.html" class="btn btn-primary btn-lg">Apply for Admission</a>
+        </div>
+      </section>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <img src="images/LOGO.jpeg" alt="Overhill Junior School" class="footer-logo">
+        <img src="{{site_logo}}" alt="Overhill Junior School" class="footer-logo">
         <h3>Overhill Junior School</h3>
-        <p class="muted">Knowledge Is Power</p>
+        <p class="muted">{{motto}}</p>
         <p class="muted">A private primary &amp; nursery school nurturing confident, curious learners since 2024.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="why-overhill.html">Why Overhill</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="parents.html">Parents</a></li>
-          <li><a href="students.html">Students</a></li>
-          <li><a href="special-programmes.html">Special Programmes</a></li>
-          <li><a href="news-events.html">News & Events</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="why-overhill.html">Why Overhill</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="parents.html">Parents</a></li><li><a href="students.html">Students</a></li><li><a href="special-programmes.html">Special Programmes</a></li><li><a href="news-events.html">News & Events</a></li><li><a href="contact.html">Contact Us</a></li></ul>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
@@ -281,21 +161,20 @@
       </div>
       <div class="footer-col">
         <h4>Get In Touch</h4>
-        <p class="muted">Wakiso, Uganda<br>P.O. Box 119654</p>
-        <p class="muted">Tel: +256 752 913 759<br>Tel: +256 749 567 732</p>
-        <p class="muted">Email: overhilljuniorschool@gmail.com</p>
+        <p class="muted">{{address}}<br>P.O. Box 119654</p>
+        <p class="muted">Tel: {{phone}}<br>Tel: +256 749 567 732</p>
+        <p class="muted">Email: {{email}}</p>
         <div class="footer-social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Twitter">t</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="YouTube">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
+          <a href="#" aria-label="Facebook" href="{{facebook_url}}">f</a>
+          <a href="#" aria-label="Twitter" href="{{twitter_url}}">t</a>
+          <a href="#" aria-label="Instagram" href="{{instagram_url}}">ig</a>
+          <a href="#" aria-label="YouTube" href="{{youtube_url}}">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; <span id="year"></span> Overhill Junior School. All rights reserved. &nbsp;|&nbsp; Content
-          placeholders ready for CMS integration.</p>
+        <p>&copy; <span id="year"></span> Overhill Junior School. All rights reserved. &nbsp;|&nbsp; Content placeholders ready for CMS integration.</p>
       </div>
     </div>
   </footer>
@@ -304,5 +183,4 @@
   <script src="js/api.js"></script>
 
 </body>
-
 </html>
