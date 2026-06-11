@@ -12,7 +12,7 @@ define('DB_CHARSET', 'utf8mb4');
 // Absolute path to the project root (one level up from /config)
 define('BASE_PATH', dirname(__DIR__));
 define('UPLOAD_PATH', BASE_PATH . '/uploads');
-define('UPLOAD_URL', '/uploads');
+define('UPLOAD_URL', 'uploads');
 
 // Upload rules
 define('MAX_IMAGE_SIZE', 5 * 1024 * 1024);     // 5 MB
