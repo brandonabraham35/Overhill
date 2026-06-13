@@ -3,10 +3,10 @@
  * Overhill Junior School - Global configuration
  * Edit the DB_* values to match your MySQL server.
  */
-define('DB_HOST', getenv('OJS_DB_HOST') ?: 'localhost');
-define('DB_NAME', getenv('OJS_DB_NAME') ?: 'overhill_school');
-define('DB_USER', getenv('OJS_DB_USER') ?: 'root');
-define('DB_PASS', getenv('OJS_DB_PASS') ?: '');
+define('DB_HOST', 'sql103.infinityfree.com');
+define('DB_NAME', 'if0_41906047_overhill_school');
+define('DB_USER', 'if0_41906047');
+define('DB_PASS', '782243ben');
 define('DB_CHARSET', 'utf8mb4');
 
 // Absolute path to the project root (one level up from /config)
