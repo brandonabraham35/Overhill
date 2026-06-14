@@ -210,7 +210,7 @@ INSERT INTO `site_settings` VALUES('2','phone','+256 752 913759','2026-06-11 11:
 INSERT INTO `site_settings` VALUES('3','email','info@overhilljunior.ac.ug','2026-06-11 11:49:16');
 INSERT INTO `site_settings` VALUES('4','address','Wakiso, Uganda','2026-06-11 11:49:16');
 INSERT INTO `site_settings` VALUES('5','motto','Education for Life','2026-06-11 11:49:16');
-INSERT INTO `site_settings` VALUES('6','site_logo','images/logo.png','2026-06-11 21:59:49');
+INSERT INTO `site_settings` VALUES('6','site_logo','images/logo.jpeg','2026-06-11 21:59:49');
 INSERT INTO `site_settings` VALUES('7','facebook_url','#','2026-06-11 21:59:49');
 INSERT INTO `site_settings` VALUES('8','twitter_url','#','2026-06-11 21:59:49');
 INSERT INTO `site_settings` VALUES('9','instagram_url','#','2026-06-11 21:59:49');

@@ -146,9 +146,11 @@ function handle_upload(array $file, string $type = 'image'): array
 function delete_upload(?string $url): void
 {
     if (!$url) return;
+
     $pathPart = parse_url($url, PHP_URL_PATH) ?: $url;
     $pathPart = ltrim($pathPart, '/');
     $path = BASE_PATH . '/' . $pathPart;
+
     if (is_file($path) && strpos(realpath($path), realpath(UPLOAD_PATH)) === 0) {
         @unlink($path);
     }
@@ -157,4 +159,46 @@ function delete_upload(?string $url): void
 function count_rows(string $table): int
 {
     return (int) db()->query("SELECT COUNT(*) FROM `$table`")->fetchColumn();
+}
+
+/**
+ * Get a setting value from the site_settings table.
+ */
+function get_setting(string $key, $default = ''): string
+{
+    static $settings = null;
+    if ($settings === null) {
+        $settings = [];
+        try {
+            $rows = db()->query("SELECT setting_key, setting_value FROM site_settings")->fetchAll();
+            foreach ($rows as $row) {
+                $settings[$row['setting_key']] = $row['setting_value'];
+            }
+        } catch (Exception $e) {
+            // Table might not exist yet during installation
+        }
+    }
+    return $settings[$key] ?? $default;
+}
+
+/**
+ * Display a setting value if not empty.
+ */
+function display_setting(string $key, string $wrap_start = '', string $wrap_end = ''): void
+{
+    $val = get_setting($key);
+    if (!empty($val)) {
+        echo $wrap_start . e($val) . $wrap_end;
+    }
+}
+
+/**
+ * Display raw setting value (for HTML content) if not empty.
+ */
+function display_content(string $key): void
+{
+    $val = get_setting($key);
+    if (!empty($val)) {
+        echo $val;
+    }
 }

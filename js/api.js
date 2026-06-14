@@ -92,7 +92,7 @@
           newsBox.insertAdjacentHTML('beforeend',
             '<article class="news-card">' +
             '<div class="news-date"><span class="d">'+day+'</span><span class="m">'+month+'</span></div>' +
-            '<div class="news-body"><h3>'+n.title+'</h3><p>'+(n.excerpt||'')+'</p><a href="school-news.html?slug='+n.slug+'">Read more &rarr;</a></div>' +
+            '<div class="news-body"><h3>'+n.title+'</h3><p>'+(n.excerpt||'')+'</p><a href="school-news.php?slug='+n.slug+'">Read more &rarr;</a></div>' +
             '</article>'
           );
         });
@@ -247,7 +247,7 @@
         res.images.forEach(function(img){
           h += '<div class="gallery-item"><a href="'+img.image+'" target="_blank"><img src="'+img.image+'" alt="'+(img.caption||'')+'"></a>'+(img.caption?'<p>'+img.caption+'</p>':'')+'</div>';
         });
-        h += '</div><div class="center" style="margin-top:40px"><a href="gallery.html" class="btn btn-outline">&larr; Back to Albums</a></div>';
+        h += '</div><div class="center" style="margin-top:40px"><a href="gallery.php" class="btn btn-outline">&larr; Back to Albums</a></div>';
         galBox.innerHTML = h;
       });
     } else {
@@ -257,7 +257,7 @@
         var h = '<div class="prog-grid">';
         res.items.forEach(function(al){
           var img = al.cover_image || 'images/facility.jpg';
-          h += '<a class="prog-card" href="gallery.html?album='+al.slug+'">' +
+          h += '<a class="prog-card" href="gallery.php?album='+al.slug+'">' +
                '<div class="prog-img" style="background-image:url(\''+img+'\')"></div>' +
                '<div class="prog-body"><h3>'+al.title+'</h3><p>'+al.image_count+' Photos</p><span class="arrow">View Album &rarr;</span></div></a>';
         });

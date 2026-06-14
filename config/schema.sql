@@ -171,7 +171,7 @@ CREATE TABLE IF NOT EXISTS email_logs (
 
 INSERT IGNORE INTO site_settings (setting_key, setting_value) VALUES
   ('school_name', 'Overhill Junior School'),
-  ('site_logo', 'images/logo.png'),
+  ('site_logo', 'images/logo.jpeg'),
   ('phone', '+256 752 913 759'),
   ('email', 'overhilljuniorschool@gmail.com'),
   ('address', 'Wakiso, Uganda'),
@@ -243,6 +243,6 @@ INSERT IGNORE INTO site_settings (setting_key, setting_value) VALUES
 
 -- Default Hero Slides
 INSERT IGNORE INTO hero_slides (image, heading, subheading, button_text, button_link, sort_order) VALUES
-  ('images/hero1.jpg', 'Welcome to Overhill Junior School', 'Nurturing confident, curious learners for a bright future.', 'Apply for Admission', 'admission-information.html', 1),
-  ('images/hero2.jpg', 'Quality Education', 'Providing the best foundation for your child.', 'Our Facilities', 'facilities.html', 2),
-  ('images/hero3.jpg', 'Extracurricular Excellence', 'Developing talents beyond the classroom.', 'Learn More', 'special-programmes.html', 3);
+  ('images/hero1.jpg', 'Welcome to Overhill Junior School', 'Nurturing confident, curious learners for a bright future.', 'Apply for Admission', 'admission-information.php', 1),
+  ('images/hero2.jpg', 'Quality Education', 'Providing the best foundation for your child.', 'Our Facilities', 'facilities.php', 2),
+  ('images/hero3.jpg', 'Extracurricular Excellence', 'Developing talents beyond the classroom.', 'Learn More', 'special-programmes.php', 3);

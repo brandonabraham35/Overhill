@@ -9,14 +9,14 @@ function nav_active(string $f): string { return basename($_SERVER['PHP_SELF']) =
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?= isset($pageTitle) ? e($pageTitle) . ' · ' : '' ?>Admin · Overhill Junior School</title>
-<link rel="icon" href="../images/logo.png">
+<link rel="icon" href="../images/logo.jpeg">
 <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body class="admin-body">
 <div class="admin-shell">
   <aside class="admin-sidebar" id="adminSidebar">
     <div class="sidebar-brand">
-      <img src="../images/logo.png" alt="Logo"><span>Overhill Admin</span>
+      <img src="../images/logo.jpeg" alt="Logo"><span>Overhill Admin</span>
     </div>
     <nav class="sidebar-nav">
       <a class="<?= nav_active('index.php') ?>" href="index.php">Dashboard</a>
