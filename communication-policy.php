@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">How we keep parents informed and connected.</p><?php display_content('communication_policy'); ?><p>We use a range of channels to communicate with parents, including the communication book, SMS, phone calls, this website, social media and termly meetings.</p><div class="card-grid"><div class="info-card"><div class="card-icon">&#9993;</div><h3>Email & SMS</h3><p>Regular updates and reminders.</p></div><div class="info-card"><div class="card-icon">&#128241;</div><h3>WhatsApp</h3><p>Quick updates via +256 752 913 759.</p></div><div class="info-card"><div class="card-icon">&#128226;</div><h3>Meetings</h3><p>Termly parent-teacher meetings.</p></div></div>
+        <p class="lead">How we keep parents informed and connected.</p><div class="cms-placeholder"><span class="cms-tag"><?php display_content('communication_policy'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><p>We use a range of channels to communicate with parents, including the communication book, SMS, phone calls, this website, social media and termly meetings.</p><div class="card-grid"><div class="info-card"><div class="card-icon">&#9993;</div><h3>Email & SMS</h3><p>Regular updates and reminders.</p></div><div class="info-card"><div class="card-icon">&#128241;</div><h3>WhatsApp</h3><p>Quick updates via <?php display_content('phone'); ?>.</p></div><div class="info-card"><div class="card-icon">&#128226;</div><h3>Meetings</h3><p>Termly parent-teacher meetings.</p></div></div>
       </div>
 
         <aside class="sidebar">

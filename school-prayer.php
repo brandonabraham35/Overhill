@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">Our school prayer, recited together each day.</p><div class="anthem-box"><?php display_content('school_prayer'); ?><p class="anthem-lines"><?php display_content('prayer_text'); ?></p></div>
+        <p class="lead">Our school prayer, recited together each day.</p><div class="anthem-box"><div class="cms-placeholder"><span class="cms-tag"><?php display_content('school_prayer'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><p class="anthem-lines"><?php display_content('prayer_text'); ?></p></div>
       </div>
 
         <aside class="sidebar">

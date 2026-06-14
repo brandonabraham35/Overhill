@@ -62,7 +62,7 @@ class EmailService {
         }
         $content = file_get_contents($templatePath);
         foreach ($data as $key => $value) {
-            $content = str_replace("{{{$key}}}", $value, $content);
+            $content = str_replace("<?php display_content('{$key'); ?>}", $value, $content);
         }
         return $content;
     }

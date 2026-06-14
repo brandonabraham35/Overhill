@@ -79,15 +79,7 @@ include 'includes/public_header.php';
 
         <aside class="sidebar">
           <h3>In This Section</h3>
-          <ul class="side-nav">
-            <li class="active"><a href="admission-information.php">Admission Information</a></li>
-            <li><a href="fee-structure.php">Fee Structure</a></li>
-            <li><a href="school-calendar.php">School Calendar</a></li>
-            <li><a href="school-rules.php">School Rules</a></li>
-            <li><a href="parent-guidelines.php">Parent Guidelines</a></li>
-            <li><a href="communication-policy.php">Communication Policy</a></li>
-            <li><a href="download-forms.php">Download Forms</a></li>
-          </ul>
+          <ul class="side-nav"><li class="active"><a href="admission-information.php">Admission Information</a></li><li class=""><a href="fee-structure.php">Fee Structure</a></li><li class=""><a href="school-calendar.php">School Calendar</a></li><li class=""><a href="school-rules.php">School Rules</a></li><li class=""><a href="parent-guidelines.php">Parent Guidelines</a></li><li class=""><a href="communication-policy.php">Communication Policy</a></li><li class=""><a href="download-forms.php">Download Forms</a></li></ul>
           <div class="side-cta">
             <h4>Ready to Join?</h4>
             <p>Give your child the gift of quality education.</p>
@@ -95,5 +87,6 @@ include 'includes/public_header.php';
           </div>
         </aside>
     </div></div></section>
+
 
 <?php include 'includes/public_footer.php'; ?>

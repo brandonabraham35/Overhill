@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">Our rules help create a safe, respectful and productive learning environment.</p><?php display_content('school_rules'); ?><ul class="check-list"><li>Arrive at school on time every day.</li><li>Wear the correct, clean school uniform.</li><li>Respect teachers, staff and fellow pupils.</li><li>Keep the school clean and take care of property.</li><li>No bullying, fighting or use of abusive language.</li><li>Complete all homework and class assignments.</li></ul>
+        <p class="lead"><?php display_content('school_rules'); ?></p><div class="cms-placeholder"><span class="cms-tag"><?php display_content('school_rules'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><ul class="check-list"><li>Arrive at school on time every day.</li><li>Wear the correct, clean school uniform.</li><li>Respect teachers, staff and fellow pupils.</li><li>Keep the school clean and take care of property.</li><li>No bullying, fighting or use of abusive language.</li><li>Complete all homework and class assignments.</li></ul>
       </div>
 
         <aside class="sidebar">

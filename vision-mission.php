@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <div class="vm-grid"><div class="vm-card"><h2>Our Vision</h2><p>To inspire students to be active learners, enabling them to become responsible citizens and leaders.</p></div><div class="vm-card alt"><h2>Our Mission</h2><p>To provide a holistic education in an inspiring, conducive environment, encouraging each student's individual growth and fostering life-long learning &mdash; creating confident and curious learners who are prepared for the future.</p></div></div><?php display_content('vision'); ?><?php display_content('mission'); ?>
+        <div class="vm-grid"><div class="vm-card"><h2>Our Vision</h2><p>To inspire students to be active learners, enabling them to become responsible citizens and leaders.</p></div><div class="vm-card alt"><h2>Our Mission</h2><p>To provide a holistic education in an inspiring, conducive environment, encouraging each student's individual growth and fostering life-long learning &mdash; creating confident and curious learners who are prepared for the future.</p></div></div><div class="cms-placeholder"><span class="cms-tag"><?php display_content('vision'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><div class="cms-placeholder"><span class="cms-tag"><?php display_content('mission'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div>
       </div>
 
         <aside class="sidebar">

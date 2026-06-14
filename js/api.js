@@ -172,7 +172,7 @@
   if(heroBox){
     get('api/hero.php').then(function(res){
       if(!res.ok || !res.items.length) return;
-      var slidesContainer = heroBox; // In index.html it is the section itself
+      var slidesContainer = heroBox; // In index.php it is the section itself
       var slidesHTML = '';
       var dotsHTML = '';
       res.items.forEach(function(s, i){

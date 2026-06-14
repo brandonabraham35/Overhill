@@ -22,11 +22,10 @@ include 'includes/public_header.php';
             <li><span class="ci-icon">&#128172;</span><div><strong>WhatsApp</strong><p><?php display_content('phone'); ?></p></div></li>
           </ul>
           <div class="footer-social dark">
-            <?php if($fb = get_setting('facebook_url')): ?><a aria-label="Facebook" href="<?= e($fb) ?>">f</a><?php endif; ?>
-            <?php if($tw = get_setting('twitter_url')): ?><a aria-label="Twitter" href="<?= e($tw) ?>">t</a><?php endif; ?>
-            <?php if($ig = get_setting('instagram_url')): ?><a aria-label="Instagram" href="<?= e($ig) ?>">ig</a><?php endif; ?>
-            <?php if($yt = get_setting('youtube_url')): ?><a aria-label="YouTube" href="<?= e($yt) ?>">yt</a><?php endif; ?>
-            <a href="admin/login.php" class="admin-link">Admin</a>
+            <a href="#" aria-label="Facebook" href="<?php display_content('facebook_url'); ?>">f</a>
+            <a href="#" aria-label="Twitter" href="<?php display_content('twitter_url'); ?>">t</a>
+            <a href="#" aria-label="Instagram" href="<?php display_content('instagram_url'); ?>">ig</a>
+            <a href="#" aria-label="YouTube" href="<?php display_content('youtube_url'); ?>">yt</a><a href="admin/login.php" class="admin-link">Admin</a>
           </div>
         </div>
         <div class="contact-form-card">
@@ -42,6 +41,7 @@ include 'includes/public_header.php';
             </div>
             <div class="form-group"><label>Message</label><textarea name="message" rows="5" placeholder="How can we help?" required></textarea></div>
             <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <button type="submit" class="btn-primary">Send Message</button>
           </form>
         </div>
       </div>
@@ -52,5 +52,6 @@ include 'includes/public_header.php';
           <p>Google Maps embed placeholder &mdash; map will be added here.</p>
         </div>
       </div></div></section>
+
 
 <?php include 'includes/public_footer.php'; ?>

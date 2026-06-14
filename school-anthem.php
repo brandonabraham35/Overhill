@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">Sung with pride by every member of the Overhill family.</p><div class="anthem-box"><?php display_content('school_anthem'); ?><p class="anthem-lines"><?php display_content('anthem_verse_1'); ?><br><br><?php display_content('anthem_chorus'); ?><br><br><?php display_content('anthem_verse_2'); ?></p></div>
+        <p class="lead">Sung with pride by every member of the Overhill family.</p><div class="anthem-box"><div class="cms-placeholder"><span class="cms-tag"><?php display_content('school_anthem'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><p class="anthem-lines"><?php display_content('anthem_verse_1'); ?><br><br><?php display_content('anthem_chorus'); ?><br><br><?php display_content('anthem_verse_2'); ?></p></div>
       </div>
 
         <aside class="sidebar">

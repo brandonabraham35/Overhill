@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">Working together as partners in your child's education.</p><?php display_content('parent_guidelines'); ?><ul class="check-list"><li>Ensure your child attends school regularly and punctually.</li><li>Check and sign your child's communication book daily.</li><li>Attend parents' meetings and school functions.</li><li>Pay school fees promptly each term.</li><li>Support reading and homework at home.</li><li>Keep the school updated with current contact details.</li></ul>
+        <p class="lead">Working together as partners in your child's education.</p><div class="cms-placeholder"><span class="cms-tag"><?php display_content('parent_guidelines'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><ul class="check-list"><li>Ensure your child attends school regularly and punctually.</li><li>Check and sign your child's communication book daily.</li><li>Attend parents' meetings and school functions.</li><li>Pay school fees promptly each term.</li><li>Support reading and homework at home.</li><li>Keep the school updated with current contact details.</li></ul>
       </div>
 
         <aside class="sidebar">

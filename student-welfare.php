@@ -13,7 +13,7 @@ include 'includes/public_header.php';
   <section class="section"><div class="container">
     <div class="content-layout with-sidebar">
       <div class="content-main">
-        <p class="lead">The safety, health and happiness of every child is our top priority.</p><?php display_content('student_welfare'); ?><div class="card-grid"><div class="info-card"><div class="card-icon">&#10010;</div><h3>Health & Sick Bay</h3><p>On-site care and first aid.</p></div><div class="info-card"><div class="card-icon">&#127869;</div><h3>Nutrition</h3><p>Balanced, nutritious meals daily.</p></div><div class="info-card"><div class="card-icon">&#128737;</div><h3>Safeguarding</h3><p>A safe and protective environment.</p></div><div class="info-card"><div class="card-icon">&#128106;</div><h3>Guidance & Counselling</h3><p>Support for every learner's well-being.</p></div></div>
+        <p class="lead">The safety, health and happiness of every child is our top priority.</p><div class="cms-placeholder"><span class="cms-tag"><?php display_content('student_welfare'); ?></span><p>This content area will be populated from the admin dashboard / CMS.</p></div><div class="card-grid"><div class="info-card"><div class="card-icon">&#10010;</div><h3>Health & Sick Bay</h3><p>On-site care and first aid.</p></div><div class="info-card"><div class="card-icon">&#127869;</div><h3>Nutrition</h3><p>Balanced, nutritious meals daily.</p></div><div class="info-card"><div class="card-icon">&#128737;</div><h3>Safeguarding</h3><p>A safe and protective environment.</p></div><div class="info-card"><div class="card-icon">&#128106;</div><h3>Guidance & Counselling</h3><p>Support for every learner's well-being.</p></div></div>
       </div>
 
         <aside class="sidebar">
